@@ -38,6 +38,18 @@ It is a user registration project. It takes the user's data from the frontend an
   <h1> ER-DIAGRAM</h1>
   
 ![ER_yogaClass](https://user-images.githubusercontent.com/94188124/207302217-fe2306dd-df35-4433-86b1-9ef5b8596578.jpg)
+<br>
+<hr>
 
   <h1> API ENDPOINTS</h1>
   
+Action       |        URL          | Usage                                  |
+------------ | ------------------- | -------------------------------------|
+GET           |      /member/         | To List all the members registered| 
+GET           |    /member/<id>       | To get a member with ID |
+POST         |   /regsiterapi/        | To register a new member |
+
+<br> 
+<hr>
+
+
