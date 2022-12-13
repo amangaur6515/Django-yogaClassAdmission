@@ -3,6 +3,12 @@
 <hr>
 <h1>ABOUT</h1>
 It is a user registration project. It takes the user's data from the frontend and calls the dajngo REST API in backend which performs basic validation and saves the data in the database.
+<br> 
+<hr> 
+<h1>Hosted Solution Link</h1>
+https://amangaur6515.pythonanywhere.com/
+<br>
+<hr>
 <h1>Technology Used</h1>
 
 * Python 
