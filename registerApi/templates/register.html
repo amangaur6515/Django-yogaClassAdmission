@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        /*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#008cba; 
+    height:100%;
+    
+}
+.container{ 
+   height:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.content{
+    background-color:white;
+    width:500px;
+    height:800px;
+}
+img{
+    width: 100%;
+    height: 30%;
+}
+.form-title{
+    padding:10px 40px 0px;
+}
+form{
+    padding:0px 40px;
+}
+input[type=text], [type=email],[type=password]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width:100%;
+    margin: 8px 0;
+    padding:10px 0;
+}
+input[type=date]{
+  margin:15px;
+  width:40%;
+ 
+  
+  
+}
+input[type=number]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width:100%;
+    margin: 8px 0;
+    padding:5px 0;
+}
+input :hover {
+    background-color: red;
+}
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+    width:45%;
+}
+.beside{
+    display:flex;  
+    justify-content: space-between;
+}
+.button{
+    color:#ffffff;
+    background-color: #4caf50;
+    height:40px;
+    width:25%;
+    margin-top:15px;
+    cursor: pointer;
+    border:none;
+    border-radius:2%;
+    outline:none;
+    text-align:center;
+    font-size:16px;
+    text-decoration:none;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+.button:hover{
+    background-color:#333333;
+}
+#batch{
+  width:100%;
+}
+a{
+    color:blue;
+
+    padding-left: 40px;
+    padding-top: 40px;
+    
+    
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+           <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="header-image" class="cld-responsive">
+                <h1 class="form-title">YOGA CLASS MEMBERSHIP</h1>
+                <form method="post">
+                    {% csrf_token %}
+                   <input type="text" name="FullName" placeholder="FULL NAME" required>
+                <div class="beside">
+                  
+                    
+                  <select id="age" name="Age">
+                  </select>
+                  
+                    <select name="Gender">
+                        <option>GENDER</option>
+                        <option>MALE</option>
+                        <option>FEMALE</option>
+                        <option>NON-BINARY</option>
+                    </select>
+                </div>
+                 
+                   <input type="number" name="MobileNo" placeholder="MOBILE NUMBER" required>
+                    <input type="email" name="Email" placeholder="EMAIL" required>
+                    
+                  <input type="text" name="Address" placeholder="ADDRESS" required>
+                    <select id="batch" name="Batch" required>
+                        <option>BATCH</option>
+                        <option>6-7 AM</option>
+                        <option>7-8 AM</option>
+                        <option>8-9 AM</option>
+                        <option>5-6 PM</option>
+                    </select>
+                  
+                    <div id="date" class="beside">
+                    <label for="JoiningDate">JOINING DATE:
+                  <input  type="date" name="JoiningDate" placeholder="JOINING DATE" required>  </div>
+                   
+                   
+                   <input type="submit" value="REGISTER" class="button">
+                   
+                   <a  href="/login"> Already a member</a>
+                </form>
+                
+            </div>
+            
+     </div>
+     
+     <script>
+        var sel = document.getElementById("age");
+    const tempOption = document.createElement("option");
+    sel[0] = new Option( 'AGE');
+    for(var i = 18;i<=65;i++){
+        sel[i-18+1] = new Option( i,i);	
+    }
+    document.body.appendChild(tempOption);
+</script>
+    
+</body>
+</html>
