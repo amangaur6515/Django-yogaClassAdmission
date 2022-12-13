@@ -1,6 +1,11 @@
 ![💻YOGA_CLASS_ADMISSION](https://user-images.githubusercontent.com/94188124/207295322-ef4a2622-abd3-475f-8961-16a04f1ff7aa.png)
 <h1> Django Based Admission Form </h1><br>
-[About](https://github.com/amangaur6515/Django-yogaClassAdmission/edit/main/README.md#about)
+<a href="#about">About</a>
+<a href="#hosted-solution-link">HostedSolutinLink</a>
+<a href="#about">About</a>
+<a href="#about">About</a>
+<a href="#about">About</a>
+<br>
 <hr>
 <h1>ABOUT</h1>
 It is a user registration project. It takes the user's data from the frontend and calls the dajngo REST API in backend which performs basic validation and saves the data in the database.
