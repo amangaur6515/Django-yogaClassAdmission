@@ -56,6 +56,7 @@ def RegisterMember(request):
         if saveserialize.is_valid():
             saveserialize.save()
             return render(request,'registrationSuccess.html')
+        return redirect('/login')
         
         #headers={'Content-Type': 'application/json'} 
         #read=requests.post('http://127.0.0.1:8000/registerapi/',json=data,headers=headers)
