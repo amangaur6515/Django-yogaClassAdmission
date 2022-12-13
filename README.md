@@ -1,10 +1,15 @@
 ![💻YOGA_CLASS_ADMISSION](https://user-images.githubusercontent.com/94188124/207295322-ef4a2622-abd3-475f-8961-16a04f1ff7aa.png)
 <h1> Django Based Admission Form </h1><br>
-<a href="#about">About</a>
-<a href="#hosted-solution-link">HostedSolutinLink</a>
-<a href="#about">About</a>
-<a href="#about">About</a>
-<a href="#about">About</a>
+<b> 
+<li><a href="#about"> About</a> </li>
+
+ <li><a href="#hosted-solution-link">HostedSolutinLink</a> </li>
+ 
+<li><a href="#technology-used">Technology Used</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#-er-diagram">ER-Diagram</a></li>
+<li><a href="#-api-endpoints">API Endpoints</a></li> </b>
 <br>
 <hr>
 <h1>ABOUT</h1>
