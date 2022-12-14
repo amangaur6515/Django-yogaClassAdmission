@@ -63,7 +63,7 @@ https://amangaur6515.pythonanywhere.com/
 Action       |        URL          | Usage                                  |
 ------------ | ------------------- | -------------------------------------|
 GET           |      /member/         | To List all the members registered| 
-GET           |    /member/<id>       | To get a member with ID |
+GET           |    /member/id/       | To get a member with ID |
 POST         |   /regsiterapi/        | To register a new member |
 
 <br> 
